@@ -1,0 +1,19 @@
+body{
+	background: url(../image/1.jpg); no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:Andalus;
+	font-size:12px;
+	word-spacing: 5px; 
+
+}
+ #genel{
+	word-spacing:10px;
+ }
+ 
+ #genel1{
+	word-spacing:45px;
+ }
+ 

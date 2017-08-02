@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  margin: 0px 0px 0px 0px;
+   
+}
+
+header .row ul{
+  text-align: center;
+  display:flex;
+  list-style-type: none;
+}
+header .row ul li a{
+  margin-top: 14px;
+  display:flex;
+  text-decoration: none;
+  color:white;
+  
+}
+
+header .row input{
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 7px;
+}
+header .row {
+  height: 50px; 
+  display:flex;
+  background-color: black;
+  color:white;
+
+}
+header .row ul li{
+
+  margin: 0px 0px 0px 20px;
+  padding: 0px 15px 0px 15px;
+
+}
+
+header .row h1{
+
+  text-align: center;
+  width: 25%;
+  margin:  2px 0px 0px 0px;
+  padding: 5px 10px 0 10px;
+  
+}
+
+footer {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 13px;
+  
+}
+
+footer .rowalt {
+  background-color: red;
+  display: flex;
+}
+
+footer .rowalt ul {
+  
+  list-style: none;
+  display: flex;
+}
+
+
+footer li img {
+  padding: 0px 10px 0px 10px;
+  width: 32px;
+  height: 32px;
+  background-color: brown;
+}
+footer p{
+  margin: 0px 480px 0px 0px;
+  padding: 25px 470px 0px 0px;
+  text-align: right;
+  width: 100px;
+  background-color: pink;
+
+}
+
+.sol{
+ 
+  display: flex;
+  width: 340px;
+  height: 560px;
+  background-color: red;
+}
+.sag{
+  
+  background-color: pink;
+  width: 940px;
+  height: 560px;
+}
+
+nav{ 
+  display: flex;
+}
+.nav2{
+  display: flex;
+}
+
+nav .sol ul li input{
+  height: 30px;
+  width: 60px;
+  margin: 0px 0px ;
+  
+
+}
+nav .sol ul li{
+  list-style-type: none;
+  
+  
+}
+
+nav .sol ul{
+  margin: 0px 0px 0px 0px;
+}
+
+nav .sag figure img{
+  width: 200px;
+  height: 200px;
+  
+}
+
+nav .sag figure{
+  display: inline;
+  margin: 5px ; 
+}
+
+
+
+
+
+
+
+

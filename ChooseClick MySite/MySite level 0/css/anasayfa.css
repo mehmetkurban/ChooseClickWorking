@@ -1,0 +1,17 @@
+body{
+	background: url(../image/2.jpg); no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:Andalus;
+	font-size:12px;
+	word-spacing: 5px;		
+}
+
+#deneme{
+	word-spacing:25px;
+
+}
+
+

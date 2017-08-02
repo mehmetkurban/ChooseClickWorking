@@ -1,0 +1,140 @@
+$(document).ready(function(){
+
+    $('.container').hide(0);
+       $('#deneme').hide(0);
+          $('#deneme2').hide(0);
+    
+    $("a").click(function(){
+        $(".container").hide();
+    });
+    
+    $("p").on({
+    mouseenter: function(){
+        $(this).css("background-color", "lightgray");
+    }, 
+    mouseleave: function(){
+        $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+        $(this).css("background-color", "yellow");
+    } 
+    
+    });
+    
+    
+    $("button").on({
+        click: function(){             
+            $(".container").fadeIn(0);
+            $("#deneme").fadeIn("slow");
+            $("#deneme2").fadeIn(3000);
+        },
+        mouseenter: function(){
+            $(".container").fadeOut(0);
+            $("#deneme").fadeOut("slow");
+            $("#deneme2").fadeOut(3000);
+        }
+    });
+    
+    $("div").hide();
+    
+    
+    
+});
+-------------------------------------------------------------
+.container  {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #69D2E7;
+    text-align: center;
+    position:relative;
+    color: #black;
+    font-family: Verdana, Arial, Sans-Serif;
+    opacity: 1;
+}
+
+#deneme{
+    height:60px;
+    width:100px;
+    border-radius:100px;
+    background-color:pink;
+    text-align:center;
+    color:#FFFFFF;
+    font-family:Verdana,sans-serif;
+    opacity:0.4;
+}
+
+a{
+     text-decoration:none;
+     font-family: "Times New Roman", Georgia, Serif;
+}
+p{
+    color:blue;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+
+--------------------------------------------------
+<html>
+	<head>
+		<title>Button Magic</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+
+     <div class="container"><br/><strong>container div<strong></div> 
+     <div id="deneme"><br/><strong>deneme div</strong></div>
+     <div id="deneme2"><br/><strong>deneme2 div</strong></div>
+     <a href="www.google.com">Google !!!</a>
+     <p>Ben bir paragrafım!</p>
+     <button>BEN BUTON!</button>
+     <input></input>
+     
+	</body>
+</html>
+------------------------------------------
+$(document).ready(function(){
+   $("#text").click(function(){
+       $(this).toggleClass('highlighted');
+    }); 
+});
+------------------------------
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+    
+}
+----------------------
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+------------------------
+$(document).ready(function(){
+    $('#button').click(function(){
+       var toAdd = $('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>" + toAdd + "</div>");
+        
+    });
+});
+----------------------------------
+$(document).ready(function() {
+    $("#menu").accordion({collapsible: true, active: false});
+});
+----------------------------------
+$(document).ready(function(){
+    $('ol').selectable();
+    $('ol').sortable(); 
+});
+----------------

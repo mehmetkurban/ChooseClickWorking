@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bitmeden AL!</title>
+        <meta charset="utf-8"/>
+        
+        <link href="BitmedenAl.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        <script src="jqdeneme.js"></script>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bitmeden AL!</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Alış-Veriş<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Deneme</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategoriler <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Spor Ayakkabıları</a></li>
+                        <li><a href="#">Klasik Ayakkabılar</a></li>
+                        <li><a href="#">Takunyalar</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Parmak Arası Terlikler</a></li>
+                    </ul>
+                    </li>
+                    <!--<li><a href="#" id="sepet">Sepet <span class="badge">42</span></a></li>-->
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <nav class="navbar col-md-2 barasagi" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">BİTMEDEN AL!</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Kategori Ekle</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="exampleModalLabel">Kategori Ekle</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="KategoriAdi" class="control-label">Kategori Adı</label>
+                                            <input type="text" class="form-control" id="KategoriAdi">
+                                        </div>
+                                    </form>
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">İptal Et</button>
+                                        <button type="button" class="btn btn-primary" id="onayla">Onayla</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#urunModal" data-whatever="@mdo" id="deneme">Ürün Ekle</a>
+                        <div class="modal fade" id="urunModal" tabindex="-1" role="dialog" aria-labelledby="urunModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="urunModalLabel">Ürün Ekle</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="control-label">Kategori Seç</label>
+                                            <div class="selectContainer">
+                                                <select class="form-control" id="KategoriSec" name="size">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="UrunAdi1" class="control-label">Ürün Adını Giriniz.</label>
+                                            <input type="text" class="form-control" id="UrunAdi1">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="UrunLinki1" class="control-label">Ürün Resminin Linkini Giriniz.</label>
+                                            <input class="form-control" id="UrunLinki1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">İptal Et</button>
+                                        <button type="button" class="btn btn-primary" id="urunonayla">Onayla</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav sidebar-nav navlistesi">
+                    
+                </ul>
+            </nav>
+            <div class="col-md-9 den">
+                
+            </div>
+        </div>
+    </body>
+</html>
